@@ -1,0 +1,74 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-content: start;
+    font-size: 18px;
+}
+
+:root {
+    
+}
+
+.container {
+    display: flex;    
+    background-color: rgba(240, 212, 176, 0.486);
+    max width: 22rem;
+    height: 18rem;
+    text-align: left;
+    justify-content: center;
+    align-content: top;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 50px;
+    font-size: 20px;   
+}
+
+.container {
+    display: none;
+}
+
+button {
+    background-color: blue;
+    border: blue;
+    display: block;
+    margin: 10px;
+    border-radius: 5px;
+    width: 12rem;
+    height: 2rem;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: rgb(226, 43, 211);
+    cursor: pointer;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.start-quiz button{
+    background-color: blue;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    margin-top: 50px;   
+    font-size: 15px;         
+}
+
+
+.start-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start-btn:hover {
+    background-color: rgb(226, 43, 211);
+    cursor: pointer;
+}
