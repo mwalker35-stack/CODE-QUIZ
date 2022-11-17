@@ -3,34 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css" />
-    <title>Code Quiz Challenge</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./style.css" rel="stylesheet">
+    <title>Quiz App</title>
 </head>
-<div class="header">
-    <a>View High Scores</a>
-    <a>Time: 60</a>
-</div>
+<header class="header">
+    <p href="#">View High Scores</p>
+    <p id="countdown"></p>
+</header>
 
 <body>
-    <section class="container">
+    <div class="container">
         <div id="question-container" class="hide">
             <div id="question">Question</div>
             <div id="answer-buttons" class="btn-grid">
-                <button class="btn">Answer 1</button>
+                <!-- <button class="btn">Answer 1</button>
                 <button class="btn">Answer 2</button>
                 <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
+                <button class="btn">Answer 4</button> -->
             </div>
         </div>
-
-    </section>
-    <div class="start-quiz">
-        <p>Try to answer the following code-related questions within the time limit. Keep in mind
-            that incorrect answers will penalize your score/time by 10 seconds.
-        </p>
-        <button id="start-btn">Start Quiz</button>
+        <div id="scoreContainer" class="hide">
+            <P>Enter your initials</P>
+            <input type="text" id="quizInitials" required minlength="2" maxlength="3" size="3">
+        </div>
+        <div class="controls">
+            <p>Try to answer the following code-related questions
+                within the time limit.
+                Keep in mind that incorrect answers will penalize your
+                score/time by ten seconds!</p>
+            <button id="start-btn" class="start-btn">Start</button>
+        </div>
     </div>
     <script src="./script.js"></script>
 </body>
