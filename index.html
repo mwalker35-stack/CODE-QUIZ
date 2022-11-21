@@ -9,8 +9,8 @@
     <title>Quiz App</title>
 </head>
 <header class="header">
-    <p href="#">View High Scores</p>
-    <p id="countdown"></p>
+    <p id="hScores"><a href="#">View High Scores</a></p>
+    <p id="countdown">15 seconds remaining</p>
 </header>
 
 <body>
@@ -18,23 +18,32 @@
         <div id="question-container" class="hide">
             <div id="question">Question</div>
             <div id="answer-buttons" class="btn-grid">
-                <!-- <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button> -->
+                    <!-- <div><button type="button"class="btn">Answer 1</button></div>
+                    <div><button type="button"class="btn">Answer 2</button></div>
+                    <div><button type="button"class="btn">Answer 3</button></div>
+                    <div><button type="button"class="btn">Answer 4</button></div> -->
             </div>
         </div>
+
         <div id="scoreContainer" class="hide">
-            <P>Enter your initials</P>
-            <input type="text" id="quizInitials" required minlength="2" maxlength="3" size="3">
+            <P id="enter">Enter your initials</P>
+            <div id="yourScore">Your</div>
+            <form><input type="text" id="quizInitials" required minlength="2" maxlength="3" size="3" placeholder="Initials"></form>
+            <button class='intbtn'type="submit"id='button'> Submit </button>
+            <button id='goback' class='intbtn'type="submit"> Go Back  </button>
+        </div>
+        <div class="scorecard" class="hide">
+            <h1 class="hide">High Scores:</h1>
         </div>
         <div class="controls">
             <p>Try to answer the following code-related questions
-                within the time limit.
+                within the 15 seconds time limit.
                 Keep in mind that incorrect answers will penalize your
                 score/time by ten seconds!</p>
             <button id="start-btn" class="start-btn">Start</button>
         </div>
+    </div>
+    <div id="correct">
     </div>
     <script src="./script.js"></script>
 </body>
